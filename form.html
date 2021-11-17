@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: gray;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form action="process.php" method="post" autocomplete="off">
+        <input type="text" name="fullname" id="fullname" size="10" maxlength="30" placeholder="ชื่อ-นามสกุล" reguired
+            value="จีรภัทร์ ทวีวัฒนามานนท์">
+        <input type="password" name="passwd" id="passwd" size="10" maxlength="30" placeholder="รหัสผ่าน" reguired>
+        <br>
+        <textarea name="address" id="address" cols="15" rows="5">1/30 นนทบุรี 11130</textarea>
+        <br>
+        <select name="car" id="car">
+            <optgroup label="รถญี่ปุ่น">
+                <option value="toyota">toyota</option>
+                <option value="honda">honda</option>
+                <option value="mazda">mazda</option>
+            </optgroup>
+            <optgroup label="รถยุโรป">
+                <option value="bmw">bmw</option>
+                <option value="benz">benz</option>
+            </optgroup>
+        </select>
+        <br>
+        <input type="radio" name="gender" id="genderM" value="male" checked>ชาย
+        <input type="radio" name="gender" id="genderF" value="female">หญิง
+        <br>
+        <input type="checkbox" name="lang[]" id="lang1" value="C" checked>C
+        <input type="checkbox" name="lang[]" id="lang1" value="Java" checked>Java
+        <input type="checkbox" name="lang[]" id="lang1" value="PHP">PHP
+        <br>
+        <input type="hidden" name="page" value="register_page">
+        <input type="hidden" name="user" value="jeeraphat">
+        <input type="submit" value="บันทึก">
+        <input type="reset" value="ล้างฟอร์ม">
+        <br>
+        <button type="submit"><strong> บันทึก</strong></button>
+        <button type="reset">ล้างข้อมูล</button>
+    </form>
+
+</body>
+
+</html>
